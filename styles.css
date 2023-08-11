@@ -1,0 +1,74 @@
+body {
+    background-color:#8B1874;
+    margin:0px;
+}
+
+#home-click-logo{
+    /* This is the logo icon that navigates/returns you to the top of the home page when clicked. */
+    height:180px;
+    width:auto;
+}
+
+.head-float {
+display: flex;
+justify-content: center;
+font-size: 24px;
+height:200px;
+width:100%;
+background-color:darkkhaki; 
+/* Line 19-21 fixes this nav-bar div to hover over everthing else on the site while user is scrolling */ 
+position: fixed;
+top: 0;
+z-index: 1030;
+}
+
+.main-cont-parent{
+    margin:200px 0px 0px 0px;
+    /*IMPORTANT FOR EDIT: the first margin (the top) has to be the same px amount as the head-float height. */
+}
+
+.intro-extro-cont{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    height:200px;
+    width:auto;
+    background-color:#F79540;
+}
+
+
+.drinks-cont{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    height:200px;
+    width:auto;
+    background-color:rgb(142, 136, 54); 
+}
+
+.wtm-cont{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    height:200px;
+    width:auto;
+    background-color:rgb(229, 219, 82); 
+}
+
+.vibe-check-cont{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    height:200px;
+    width:auto;
+    background-color:rgb(121, 113, 13); 
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    height:100px;
+    width:auto;
+    background-color:rgb(216, 87, 211); 
+}
