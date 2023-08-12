@@ -15,7 +15,7 @@ justify-content: center;
 font-size: 24px;
 height:200px;
 width:100%;
-background-color:darkkhaki; 
+background-color:#F79540; 
 /* Line 19-21 fixes this nav-bar div to hover over everthing else on the site while user is scrolling */ 
 position: fixed;
 top: 0;
@@ -23,8 +23,8 @@ z-index: 1030;
 }
 
 .main-cont-parent{
-    margin:200px 0px 0px 0px;
-    /*IMPORTANT FOR EDIT: the first margin (the top) has to be the same px amount as the head-float height. */
+    margin-top:200px;
+    /*IMPORTANT FOR EDIT: top margin has to be the same px amount as the head-float height. */
 }
 
 .intro-extro-cont{
@@ -33,25 +33,31 @@ z-index: 1030;
     font-size: 24px;
     /*height:200px;*/
     width:auto;
-    background-color:#F79540;
+    background-color:#B71375;
     /* Line 38-40 this is to seperate the two child divs within the parent container div into two rows */
     display:flex;
     flex-direction:row; 
     flex-wrap:wrap;
+    text-align:center;
+    align-items:center;
     
 }
 
 .extro-desc{
     width:auto;
-    /*height:200px;*/
+    
 }
 
+
+.intro-desc{
+    width:auto;
+    
+}
 
 .drinks-cont{
     display: flex;
     justify-content: center;
     font-size: 24px;
-    /*height:200px;*/
     width:auto;
     background-color:rgb(142, 136, 54); 
 }
@@ -59,11 +65,62 @@ z-index: 1030;
 .wtm-cont{
     display: flex;
     justify-content: center;
+    flex-direction:column;
+    text-align:center;
+    align-items:center;
     font-size: 24px;
-    /*height:200px;*/
     width:auto;
-    background-color:rgb(229, 219, 82); 
+    background-color:#F79540;   
 }
+/* WTM SECTION CSS STARTS HERE */
+#wtmTitle{
+    height:auto;
+    width:100%;
+    display:flex;
+    align-items:flex-start;
+    text-align:center;
+    justify-content:center;
+    align-items:center;
+    align-items:flex-start;
+    
+    
+}
+#wtmHeader{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    width:100%;
+     display:flex;
+     flex-direction:row; 
+     flex-wrap:wrap;
+     align-items:flex-start;
+     text-align:center;
+     margin-bottom:50px;
+}
+
+.genHolder{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    width:100%;
+     /* Line 74-76 this is to seperate the two child divs within the parent container div into two rows */
+     display:flex;
+     flex-direction:row; 
+     flex-wrap:wrap;
+     align-items:flex-end;
+     text-align:center;
+   
+}
+
+.introGEN {
+    width: 50%;
+}
+
+.extroGEN {
+    width:50%;
+    
+}
+/* WTM SECTION CSS ENDS HERE */
 
 .vibe-check-cont{
     display: flex;

@@ -26,10 +26,10 @@
 
                 <div class="extro-desc"> <!--Left side row - information on extroverts-->
 
-                    <h2>EXTROVERTS</h2> <!-- CHANGE CONTENT -->
+                    <h2>EXTROVERTS</h2> <!-- *** CHANGE CONTENT *** -->
                     <h5>An extrovert is a person who thrives in social interactions and gains energy from being around others.</h3> <!-- CHANGE CONTENT -->
 
-                    <ul> <!-- CHANGE CONTENT -->
+                    <ul> <!-- *** CHANGE CONTENT *** -->
                         <li>Energized by social interactions.</li>
                         <li>Outgoing and sociable.</li>
                         <li>Enjoys being around people and making new connections.</li>
@@ -42,10 +42,10 @@
 
                 <div class="intro-desc"> <!-- Right side row - information on introverts-->
 
-                    <h2>INTROVERTS</h2> <!-- CHANGE CONTENT -->
+                    <h2>INTROVERTS</h2> <!-- *** CHANGE CONTENT *** -->
                     <h5>An extrovert is a person who thrives in social interactions and gains energy from being around others.</h3> <!-- CHANGE CONTENT -->
 
-                    <ul> <!-- CHANGE CONTENT -->
+                    <ul> <!-- *** CHANGE CONTENT *** -->
                         <li>Energized by social interactions.</li>
                         <li>Outgoing and sociable.</li>
                         <li>Enjoys being around people and making new connections.</li>
@@ -60,17 +60,41 @@
         <div class="drinks-cont"> <!--ADD:-->
             </div>
 
-        <div class="wtm-cont"> <!-- This Div contains the button with the click trigger for the GEN_Date function to generate random date ideas for the user -->
-
-                <!-- This button starts the function "GEN_Date" to generate random date ideas -->
-                <h3>WTM?</h3>
-                <button onclick="GEN_Date()">WTM?</button>
+        <div class="wtm-cont"> 
+        <!-- This Div contains the 2 buttons with the click triggers for the GEN_Date & GEN_Date2 functions to generate random date ideas for the user -->
                 
-                <div id="Date_Print_Div"> <!-- This is the div of the date generator output -->
-
-                    <p id="dateP"></p> <!-- This is the paragraph that prints the date idea out -->
+                <div id="wtmHeader">
+                    <h3>WTM?</h3>
                 </div>
 
+                <div class = "genHolder">
+
+                    <!-- EXTROVERT DATE GENERATOR -->
+                    <div class="extroGEN">
+
+                        <!-- This button starts the function "GEN_Date" to generate random date ideas -->
+                        <button onclick="GEN_Date()">EXTRO</button>
+                
+                        <div id="Date_Print_Div"> <!-- This is the div of the date generator output -->
+
+                            <p id="dateP"></p> <!-- This is the paragraph that prints the date idea out -->
+                        </div>
+
+                    </div>
+
+                    <!-- INTROVERT DATE GENERATOR -->
+                    <div class="introGEN">
+
+                        <!-- This button starts the function "GEN_Date" to generate random date ideas -->
+                        <button onclick="GEN_Date2()">INTRO</button>
+                
+                        <div id="Date_Print_Div2"> <!-- This is the div of the date generator output -->
+
+                            <p id="dateP2"></p> <!-- This is the paragraph that prints the date idea out -->
+                        </div>
+
+                    </div>
+                </div>
         </div>
 
         <div class="vibe-check-cont"> <!--ADD:-->
