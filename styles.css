@@ -1,5 +1,5 @@
 body {
-    background-color:#8B1874;
+    background-color:#111412;
     margin:0px;
 }
 
@@ -15,11 +15,36 @@ justify-content: center;
 font-size: 24px;
 height:200px;
 width:100%;
-background-color:#F79540; 
+background-image: linear-gradient(180deg, #ed6658, #c9e454);
 /* Line 19-21 fixes this nav-bar div to hover over everthing else on the site while user is scrolling */ 
 position: fixed;
 top: 0;
 z-index: 1030;
+
+}
+
+.leftSideNav{
+    width:25%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+}
+
+.home-icon-holder{
+
+    width:50%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+
+}
+
+.login-sect{
+    width:25%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:flex-end;
+
 }
 
 .main-cont-parent{
@@ -31,16 +56,22 @@ z-index: 1030;
     display: flex;
     justify-content: center;
     font-size: 24px;
+    color:#7c5884;
     /*height:200px;*/
     width:auto;
-    background-color:#B71375;
+    background-color:#ebeced; 
     /* Line 38-40 this is to seperate the two child divs within the parent container div into two rows */
     display:flex;
     flex-direction:row; 
     flex-wrap:wrap;
     text-align:center;
     align-items:center;
-    
+    border-bottom: solid #111412 5px;
+}
+
+.intro-extro-cont:hover {
+    background-image: linear-gradient(180deg, #f08276, #f1b2d0);
+    color:#ebeced;
 }
 
 .extro-desc{
@@ -62,6 +93,7 @@ z-index: 1030;
     background-color:rgb(142, 136, 54); 
 }
 
+/* WTM SECTION CSS STARTS HERE */
 .wtm-cont{
     display: flex;
     justify-content: center;
@@ -70,9 +102,15 @@ z-index: 1030;
     align-items:center;
     font-size: 24px;
     width:auto;
-    background-color:#F79540;   
+    background-color:#ebeced;
+    color:#7c5884;
+    border-bottom: solid #111412 5px;   
 }
-/* WTM SECTION CSS STARTS HERE */
+.wtm-cont:hover {
+    background-image: linear-gradient(180deg, #f08276, #f1b2d0);
+    color:#ebeced;
+}
+
 #wtmTitle{
     height:auto;
     width:100%;
@@ -123,12 +161,13 @@ z-index: 1030;
 /* WTM SECTION CSS ENDS HERE */
 
 .vibe-check-cont{
+
     display: flex;
     justify-content: center;
     font-size: 24px;
     /*height:200px;*/
     width:auto;
-    background-color:rgb(121, 113, 13); 
+     
 }
 
 .footer{
