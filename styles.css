@@ -77,10 +77,10 @@ text-align:center;
 
 }
 
-.main-cont-parent{
-    /* margin-top:200px; */
-    /*IMPORTANT FOR EDIT: top margin has to be the same px amount as the head-float height. */
-}
+/* .main-cont-parent{
+    margin-top:200px;
+    IMPORTANT FOR EDIT: top margin has to be the same px amount as the head-float height.
+} */
 
 #intro-extro-cont{
     display: flex;
@@ -275,4 +275,9 @@ transition: background-color 0s;
 #footerimg{
     height: 75px;
     width: 75px;
+}
+
+#video{
+height: auto;
+width: 100%;
 }
