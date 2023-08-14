@@ -1,12 +1,12 @@
 document.getElementById('feedbackForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent form submission here
 
-    // Get form values here
+    // Get form values here (dummy code)
     var name = document.getElementById('name').value;
     var email = document.getElementById('email').value;
     var feedback = document.getElementById('feedback').value;
 
-    //Form validation
+    //Form validation dummy code
     
     setTimeout(function() {
         document.getElementById('feedbackForm').reset();

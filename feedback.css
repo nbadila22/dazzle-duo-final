@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: linear-gradient(180deg, #5D001D, #9B1750);
+    background-color: #689775;
 }
 
 .container {
@@ -9,7 +9,7 @@ body {
     padding: 20px;
     border: 1px solid #d82929;
     border-radius: 50px;
-    background-color: #924264;
+    background-image: linear-gradient(180deg, #5D001D, #9B1750);
 }
 
 label, input, textarea {
@@ -18,7 +18,7 @@ label, input, textarea {
 }
 
 button {
-    background-color:#9B1750;
+    background-image: linear-gradient(180deg, #5D001D, #9B1750);
     color: #fff;
     border: none;
     padding: 10px 20px;
