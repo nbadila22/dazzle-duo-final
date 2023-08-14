@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(180deg, #5D001D, #9B1750);
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #d82929;
+    border-radius: 50px;
+    background-color: #924264;
+}
+
+label, input, textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color:#9B1750;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-color: #d82929;
+    border-radius: 20px;
+}
+
+.hidden {
+    display: none;
+}
