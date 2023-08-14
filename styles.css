@@ -59,11 +59,7 @@ z-index: 1030;
     display: flex;
     justify-content: center;
     font-size: 24px;
-    color:#201812;
-    /*height:200px;*/
     width:auto;
-    background-color:#e4dfdd; 
-    /* Line 38-40 this is to seperate the two child divs within the parent container div into two rows */
     display:flex;
     flex-direction:row; 
     flex-wrap:wrap;
@@ -71,22 +67,26 @@ z-index: 1030;
     align-items:center;
     border-bottom: solid #111412 5px;
     /* Lines 74-77 transition the bg and font colors */
-    transition: 0.5s;
-    -moz-transition: 0.5s;
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
+    transition: 5s;
+    -moz-transition: 5s;
+    -webkit-transition: 5s;
+    -o-transition: 5s;
+
+    color:#201812;
+    background-color:#e4dfdd; 
        
     
 }
 
 .intro-extro-cont:hover {
-    background-image: linear-gradient(180deg, #e3afbc, #db98aa);
-    color:#ebeced;
-    /* Lines 86-89 transition the bg and font colors */
+   
     transition: 0.5s;
     -moz-transition: 0.5s;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
+
+    background-image: linear-gradient(180deg, #e3afbc, #db98aa);
+    color:#ebeced;
     
     
 }
@@ -130,26 +130,27 @@ z-index: 1030;
     align-items:center;
     font-size: 24px;
     width:auto;
-    background-color:#e4dfdd;
-    color:#7c5884;
-    border-bottom: solid #111412 5px;   
+    border-bottom: solid #111412 5px; 
+
     transition: background-color 3s 2s;
-     /* Lines 138-141 transition the bg and font colors */
-     transition: 0.5s;
-     -moz-transition: 0.5s;
-     -webkit-transition: 0.5s;
-     -o-transition: 0.5s;
+     transition: 4s;
+     -moz-transition: 4s;
+     -webkit-transition: 4s;
+     -o-transition: 4s;
+
+     background-color:#e4dfdd;
+    color:#7c5884;
 }
 .wtm-cont:hover {
+    
+    transition: background-color 3s 2s;
+    transition: 4s;
+    -moz-transition: 4s;
+    -webkit-transition: 4s;
+    -o-transition: 4s;
+
     background-image: linear-gradient(180deg, #e3afbc, #db98aa);
     color:#ebeced;
-    background-color: #e8f5fa;
-    transition: background-color 0s;
-     /* Lines 86-89 transition the bg and font colors */
-     transition: 0.5s;
-     -moz-transition: 0.5s;
-     -webkit-transition: 0.5s;
-     -o-transition: 0.5s;
 }
 
 #wtmTitle{
