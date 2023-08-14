@@ -3,11 +3,22 @@ body {
     margin:0px;
     
 }
+#nav{
+    background-color: #d384a6 !important; 
+    
+}
+
 
 #home-click-logo{
     /* This is the logo icon that navigates/returns you to the top of the home page when clicked. */
     height:180px;
     width:auto;
+}
+
+#homeButton{
+    background-color: transparent;
+    border:none;
+
 }
 
 .head-float {
@@ -18,11 +29,17 @@ height:200px;
 width:100%;
 background-image: linear-gradient(180deg, #5d001d, #9b1750);
 /* Line 19-21 fixes this nav-bar div to hover over everthing else on the site while user is scrolling */ 
-position: fixed;
-top: 0;
 z-index: 1030;
-
 }
+
+.parent-header{
+    position: sticky;
+    top: 0;
+    height:auto; 
+    width:100%; 
+}
+
+
 
 .leftSideNav{
     width:25%;
@@ -49,13 +66,23 @@ z-index: 1030;
     
 
 }
+.quickScrollButtons{
+height:auto;
+width: 100%;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+align-items:center; 
+text-align:center;
+
+}
 
 .main-cont-parent{
-    margin-top:200px;
+    /* margin-top:200px; */
     /*IMPORTANT FOR EDIT: top margin has to be the same px amount as the head-float height. */
 }
 
-.intro-extro-cont{
+#intro-extro-cont{
     display: flex;
     justify-content: center;
     font-size: 24px;
@@ -79,7 +106,7 @@ z-index: 1030;
     
 }
 
-.intro-extro-cont:hover {
+#intro-extro-cont:hover {
     background-image: linear-gradient(180deg, #e3afbc, #db98aa);
     color:#ebeced;
     /* Lines 86-89 transition the bg and font colors */
@@ -113,7 +140,7 @@ z-index: 1030;
     
 }
 
-.drinks-cont{
+#drinks-cont{
     display: flex;
     justify-content: center;
     font-size: 24px;
@@ -141,7 +168,8 @@ z-index: 1030;
      -o-transition: 0.5s;
 }
 .wtm-cont:hover {
-    background-image: linear-gradient(180deg, #e3afbc, #db98aa);
+    background-image: linear-gradient(180deg, #689775, #8fbf9d);
+    /*background-image: linear-gradient(180deg, #e3afbc, #db98aa);*/ 
     color:#ebeced;
     background-color: #e8f5fa;
     transition: background-color 0s;
@@ -201,21 +229,50 @@ z-index: 1030;
 }
 /* WTM SECTION CSS ENDS HERE */
 
-.vibe-check-cont{
-
+#vibe-check-cont{
+    width:100%;
+    height:auto; 
     display: flex;
     justify-content: center;
     font-size: 24px;
-    /*height:200px;*/
     width:auto;
+    font-size: 24px;
+    background-color:#e4dfdd;
+    color:#7c5884;
+    border-bottom: solid #111412 5px;   
+    transition: background-color 3s 2s;
+     /* Lines 138-141 transition the bg and font colors */
+     transition: 0.5s;
+     -moz-transition: 0.5s;
+     -webkit-transition: 0.5s;
+     -o-transition: 0.5s;
      
 }
+
+#vibe-check-cont:hover{
+background-image: linear-gradient(180deg, #e3afbc, #db98aa);
+color:#ebeced;
+background-color: #e8f5fa;
+transition: background-color 0s;
+ /* Lines 86-89 transition the bg and font colors */
+ transition: 0.5s;
+ -moz-transition: 0.5s;
+ -webkit-transition: 0.5s;
+ -o-transition: 0.5s;
+}
+
 
 .footer{
     display: flex;
     justify-content: center;
     font-size: 24px;
-    /*height:100px;*/
+    height:100px;
     width:auto;
-    background-color:rgb(216, 87, 211); 
+    background-color:#e4dfdd;
+    align-items: center;
+}
+
+#footerimg{
+    height: 75px;
+    width: 75px;
 }

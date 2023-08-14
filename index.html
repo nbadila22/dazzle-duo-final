@@ -4,37 +4,87 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <title>Dazzle Duo!</title>
     <!-- come back to replace the tab icon on line #11 -->
     <link rel="icon" href="winecling.png">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   
    
+   
     <!-- This div is the floating header wit logo icon (home link), nav bar, & login -->
-    <div class="head-float">
 
-        <!-- *** IMPORTANT TO KNOW *** head-float is split into 3 div sections: left side (25% screen), center (50% screen), and the right side (25% screen) -->
-        <div class="leftSideNav">
+    <div class="parent-header">
 
+        <div class="topOfPage"></div>
+
+        <div class="head-float">
+
+            <!-- *** IMPORTANT TO KNOW *** head-float is split into 3 div sections: left side (25% screen), center (50% screen), and the right side (25% screen) -->
+            <div class="leftSideNav">
+
+            </div>
+
+            <div class="home-icon-holder">
+                <button id="homeButton" onclick="scrollUpTop()"><img id="home-click-logo"src="winecling.png"></button>
+            </div>
+
+            <div class="login-sect">
+
+            </div>
+
+        
         </div>
-
-        <div class="home-icon-holder">
-            <a href="index.html"><img id="home-click-logo"src="winecling.png"></a>
-        </div>
-
-        <div class="login-sect">
-
-        </div>
+        <nav id="nav" class="navbar navbar-expand-lg bg-body-tertiary navbarcolor">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="hgoogle" id="dazzlelogo">Dazzle Duo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="hi">LOGIN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">REGISTER</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    ABOUT US
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">MEET THE TEAM</a></li>
+                    <li><a class="dropdown-item" href="#">MISSION</a></li>
+                    
+                    <li><a class="dropdown-item" href="#">CAREER</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a  aria-disabled="false"></a>
+                </li>
+                </ul>
+                
+            </div>
+            </div>
+        </nav>
     </div>
 
     <!--PARENT DIV OF MAIN PAGE COMLUMN CONTAINTERS-->
     <div class="main-cont-parent">
 
-        
-        <div class="intro-extro-cont"> <!--ADD: bullet points & descriptions-->
+        <div class="quickScrollButtons">
+
+            <button onclick="dinnerScroll()">DB</button>
+            <button onclick="vibeScroll()">VC</button>
+            <button onclick="wtmScroll()">WTM</button>
+            
+
+        </div>
+
+        <div id="intro-extro-cont"> <!--ADD: bullet points & descriptions-->
 
                 <div class="extro-desc"> <!--Left side row - information on extroverts-->
 
@@ -69,7 +119,7 @@
 
         </div>
 
-        <div class="drinks-cont"> <!--ADD:-->
+        <div id="drinks-cont"> <!--ADD:-->
             </div>
 
         <div class="wtm-cont"> 
@@ -109,25 +159,69 @@
                 </div>
         </div>
 
-        <div class="vibe-check-cont"> <!--ADD:-->
+        <div id="vibe-check-cont">
+            <div id="quiz">
+                <h1>Personality Test</h1> 
+            <!-- This is where the questions will be formatted -->
+                <form id="quiz-form">
+                    <fieldset class="question1">
+                        <legend>Question 1: Do you look for Optimism in a partner?</legend>
+                        <label><input type="radio" name="q1" value="Yes" id="Yes"> Yes</label>
+                        <label><input type="radio" name="q1" value="No" id="No"> No</label>
+                       
+                    </fieldset>
+                    <fieldset class="question2">
+                    <legend>Question 2: Are you uncomforatble with talking in a crowd?</legend>
+                        <label><input type="radio" name="q2" value="Yes" id="Yes"> Yes</label>
+                       <label><input type="radio" name="q2" value="No" id="No"> No</label>
+                    </fieldset>
+                    <fieldset class="question3">
+                        <legend>Question 3: Do you get more excited by ideas than by external activities?</legend>
+                            <label><input type="radio" name="q3" value="Yes" id="Yes"> Yes</label>
+                          <label><input type="radio" name="q3" value="No" id="No"> No</label>
+                        </fieldset>
+                        <fieldset class="question4">
+                            <legend>Question 4: In general, after attending a large party or networking event, do you feel tired and exhausted?</legend>
+                                <label><input type="radio" name="q4" value="Yes" id="Yes"> Yes</label>
+                                <label><input type="radio" name="q4" value="No" id="No"> No</label>
+                                
+                            </fieldset>
+                            <fieldset class="question5">
+                                <legend>Question 5: Do you prefer a few deep, close relationships to many casual ones?</legend>
+                                    <label><input type="radio" name="q5" value="Yes" id="Yes"> Yes</label>
+                                    <label><input type="radio" name="q5" value="No" id="No"> No</label>
+                                 
+                                </fieldset>
+        
+                        
+                        <button type="submit" onclick="analyzePersonality()">Submit</button>
+                        <!-- Sumbit button which links to the analyzePersonality() function -->
+                </form>
+                <div id="result"></div>
             </div>
 
-        <div class="footer"> <!--ADD: nav bar, copyright, social media links, etc.-->
+                
+            </div>
 
-    </div>
-
+        
+            <div class="footer"> <!--ADD: nav bar, copyright, social media links, etc.-->
+                <div> <img id="footerimg"  src="winecling.png" alt="winecling">&nbsp&nbsp&nbsp</div>
+                <div class="footertext">Copyright © 2023 Apple Inc &nbsp&nbsp&nbsp</div>
+                <div class="footertext">All rights reserved. &nbsp&nbsp&nbsp</div>
+                <div class="footertext">Privacy Policy.&nbsp&nbsp&nbsp</div>
+                <div class="footertext">Terms of Use.&nbsp&nbsp&nbsp</div>
+                <div class="footertext">Sales and Refunds.&nbsp&nbsp&nbsp</div>
+                <div class="footertext">Legal &nbsp&nbsp&nbsp</div>
+                <div class="footertext">Site Map&nbsp&nbsp&nbsp</div>
+                <!-- <div class="footertext" id="fblogo"><img src="facebook.png" alt="facebook logo"> </div> -->
+                <div class="footertext">Twitter logo &nbsp&nbsp&nbsp</div>
+                <div class="footertext">etc</div>
+            </div>
+    
     
 
     
-
-
-
-
-
-
-
-
-
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 <script src="Project.js"></script>
 </body>
 </html>
