@@ -1,0 +1,62 @@
+body {
+    background-color:#e4dfdd;
+    margin:0px;
+    
+}
+#home-click-logo{
+    /* This is the logo icon that navigates/returns you to the top of the home page when clicked. */
+    height:180px;
+    width:auto;
+}
+.head-float {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    height:200px;
+    width:100%;
+    background-image: linear-gradient(180deg, #5d001d, #9b1750);
+    /* Line 19-21 fixes this nav-bar div to hover over everthing else on the site while user is scrolling */ 
+    z-index: 1030;
+    }
+    .parent-header{
+        position: sticky;
+        top: 0;
+        height:auto; 
+        width:100%; 
+    }
+    .leftSideNav{
+        width:25%;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:flex-start;
+    }
+    
+    .home-icon-holder{
+    
+        width:50%;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+    
+    
+    }
+    .login-sect{
+        width:25%;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:flex-end;
+        
+    
+    }
+
+    .meettheteam{
+        display: flex;
+        background-image: linear-gradient(180deg, #689775, #8fbf9d);
+        align-items: center;
+    }
+    
+    #team{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
