@@ -37,6 +37,7 @@ z-index: 1030;
     flex-wrap:wrap;
     justify-content:center;
 
+
 }
 
 .login-sect{
@@ -44,6 +45,7 @@ z-index: 1030;
     display:flex;
     flex-wrap:wrap;
     justify-content:flex-end;
+    
 
 }
 
@@ -77,13 +79,24 @@ z-index: 1030;
 }
 
 .extro-desc{
-    width:auto;
-    
+    width:50%;
+    display:flex; 
+    flex-wrap:wrap;
+    justify-content:flex-start;
+    text-align:center;
+    align-items:center;
+    flex-direction:column;
 }
 
 
 .intro-desc{
-    width:auto;
+    width:50%;
+    display:flex; 
+    flex-wrap:wrap;
+    justify-content:flex-end; 
+    text-align:center; 
+    align-items:center;
+    flex-direction:column; 
     
 }
 
