@@ -1,5 +1,5 @@
 body {
-    background-color:#8B1874;
+    background-color:#111412;
     margin:0px;
 }
 
@@ -15,63 +15,161 @@ justify-content: center;
 font-size: 24px;
 height:200px;
 width:100%;
-background-color:darkkhaki; 
+background-image: linear-gradient(180deg, #ed6658, #c9e454);
 /* Line 19-21 fixes this nav-bar div to hover over everthing else on the site while user is scrolling */ 
 position: fixed;
 top: 0;
 z-index: 1030;
+
+}
+
+.leftSideNav{
+    width:25%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+}
+
+.home-icon-holder{
+
+    width:50%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+
+}
+
+.login-sect{
+    width:25%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:flex-end;
+
 }
 
 .main-cont-parent{
-    margin:200px 0px 0px 0px;
-    /*IMPORTANT FOR EDIT: the first margin (the top) has to be the same px amount as the head-float height. */
+    margin-top:200px;
+    /*IMPORTANT FOR EDIT: top margin has to be the same px amount as the head-float height. */
 }
 
 .intro-extro-cont{
     display: flex;
     justify-content: center;
     font-size: 24px;
+    color:#7c5884;
     /*height:200px;*/
     width:auto;
-    background-color:#F79540;
+    background-color:#ebeced; 
     /* Line 38-40 this is to seperate the two child divs within the parent container div into two rows */
     display:flex;
     flex-direction:row; 
     flex-wrap:wrap;
+    text-align:center;
+    align-items:center;
+    border-bottom: solid #111412 5px;
+    
+}
+
+.intro-extro-cont:hover {
+    background-image: linear-gradient(180deg, #f08276, #f1b2d0);
+    color:#ebeced;
     
 }
 
 .extro-desc{
     width:auto;
-    /*height:200px;*/
+    
 }
 
+
+.intro-desc{
+    width:auto;
+    
+}
 
 .drinks-cont{
     display: flex;
     justify-content: center;
     font-size: 24px;
-    /*height:200px;*/
     width:auto;
     background-color:rgb(142, 136, 54); 
 }
 
+/* WTM SECTION CSS STARTS HERE */
 .wtm-cont{
     display: flex;
     justify-content: center;
+    flex-direction:column;
+    text-align:center;
+    align-items:center;
     font-size: 24px;
-    /*height:200px;*/
     width:auto;
-    background-color:rgb(229, 219, 82); 
+    background-color:#ebeced;
+    color:#7c5884;
+    border-bottom: solid #111412 5px;   
+}
+.wtm-cont:hover {
+    background-image: linear-gradient(180deg, #f08276, #f1b2d0);
+    color:#ebeced;
 }
 
+#wtmTitle{
+    height:auto;
+    width:100%;
+    display:flex;
+    align-items:flex-start;
+    text-align:center;
+    justify-content:center;
+    align-items:center;
+    align-items:flex-start;
+    
+    
+}
+#wtmHeader{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    width:100%;
+     display:flex;
+     flex-direction:row; 
+     flex-wrap:wrap;
+     align-items:flex-start;
+     text-align:center;
+     margin-bottom:50px;
+}
+
+.genHolder{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    width:100%;
+     /* Line 74-76 this is to seperate the two child divs within the parent container div into two rows */
+     display:flex;
+     flex-direction:row; 
+     flex-wrap:wrap;
+     align-items:flex-end;
+     text-align:center;
+   
+}
+
+.introGEN {
+    width: 50%;
+}
+
+.extroGEN {
+    width:50%;
+    
+}
+/* WTM SECTION CSS ENDS HERE */
+
 .vibe-check-cont{
+
     display: flex;
     justify-content: center;
     font-size: 24px;
     /*height:200px;*/
     width:auto;
-    background-color:rgb(121, 113, 13); 
+     
 }
 
 .footer{
