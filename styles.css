@@ -149,7 +149,7 @@ text-align:center;
 }
 
 /* WTM SECTION CSS STARTS HERE */
-.wtm-cont{
+#wtm-cont{
     display: flex;
     justify-content: center;
     flex-direction:column;
@@ -167,7 +167,7 @@ text-align:center;
      -webkit-transition: 0.5s;
      -o-transition: 0.5s;
 }
-.wtm-cont:hover {
+#wtm-cont:hover {
     background-image: linear-gradient(180deg, #689775, #8fbf9d);
     /*background-image: linear-gradient(180deg, #e3afbc, #db98aa);*/ 
     color:#ebeced;
@@ -265,7 +265,7 @@ transition: background-color 0s;
 .footer{
     display: flex;
     justify-content: center;
-    font-size: 24px;
+    font-size: 20px;
     height:100px;
     width:auto;
     background-color:#e4dfdd;
