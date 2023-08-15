@@ -23,8 +23,8 @@ const datePDiv2 = document.getElementById('Date_Print_Div2')
 function GEN_Date2() {
     // This function is used to select a random date idea from the array "dates" and return the value outside of this function for it to display 
 
-    const dates = ["Build Your Own Garden", "Go On An",
-        "Axe Throwing", "Roller Skating"]; // *** CHANGE/ADD DATE IDEAS IN ARRAY 
+    const dates = ["Build Your Own Garden", "Go On An Impulsive Road Trip",
+        "At-Home Dinner Date", "Read Together", "Sip N Paint Home Edition", "Walk In The Park"]; // *** CHANGE/ADD DATE IDEAS IN ARRAY 
 
     let PULL_Date = dates[(Math.floor(Math.random() * dates.length))];
     // randomizes date idea from dates array and assigns it to the returning variable "PULL_Dates"
