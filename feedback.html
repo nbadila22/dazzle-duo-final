@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="feedback.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body style="background-color: #5D001D;">
+   
+   
+   
+    <div class="container">
+        <h1>Feedback Form</h1>
+        <form id="feedbackForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" required></textarea>
+            
+            <button type="submit">Submit Feedback</button>
+        </form>
+        <div id="successMessage" class="hidden">Thank you for your feedback!</div>
+    </div>
+   
+    <div class="head-float">
+
+        <!-- *** IMPORTANT TO KNOW *** head-float is split into 3 div sections: left side (25% screen), center (50% screen), and the right side (25% screen) -->
+        <div class="leftSideNav">
+
+        </div>
+
+        <div class="home-icon-holder">
+            <a href="index.html"><img id="home-click-logo"src="winecling.png"></a>
+        </div>
+
+        <div class="login-sect">
+
+        </div>
+    </div>
+    <script src="feedback.js"></script>
+</body>
+</html>

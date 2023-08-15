@@ -109,3 +109,42 @@ function dinnerScroll(){
 function scrollUpTop(){
     window.scrollTo({top: 0, behavior: 'smooth'});
 }
+
+// hien api test
+
+// script.js
+
+// script.js
+
+const apiKey = '1'; // Replace '1' with your actual TheMealDB API key
+const apiUrl = 'https://www.themealdb.com/api/json/v1/1/random.php';
+
+const generateButton = document.getElementById('generateButton');
+const recipeContainer = document.getElementById('recipeContainer');
+
+generateButton.addEventListener('click', () => {
+    fetch(apiUrl)
+    .then(response => response.json())
+    .then(data => {
+        const recipe = data.meals[0];
+
+        // Update the content of the recipeContainer
+        recipeContainer.innerHTML = `
+            <div class="recipe-box">
+                <h2>${recipe.strMeal}</h2>
+                <img src="${recipe.strMealThumb}" alt="${recipe.strMeal}" />
+                <p>${recipe.strInstructions}</p>
+            </div>
+        `;
+    })
+    .catch(error => {
+        console.error('Error fetching recipe:', error);
+    });
+});
+
+
+
+
+
+
+

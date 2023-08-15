@@ -7,6 +7,10 @@ body {
     margin:0px;
     
 }
+#nav{
+    background-color: #d384a6 !important; 
+    
+}
 #home-click-logo{
     /* This is the logo icon that navigates/returns you to the top of the home page when clicked. */
     height:180px;
@@ -64,3 +68,4 @@ body {
         display: flex;
         justify-content: center;
     }
+
