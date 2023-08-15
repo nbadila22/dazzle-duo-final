@@ -29,7 +29,7 @@ function GEN_Date2() {
     let PULL_Date = dates[(Math.floor(Math.random() * dates.length))];
     // randomizes date idea from dates array and assigns it to the returning variable "PULL_Dates"
 
-    document.getElementById("dateP2").innerHTML = PULL_Date;
+    document.getElementById("dateP2").innerHTML = PULL_Date; 
 
 
 
@@ -37,8 +37,8 @@ function GEN_Date2() {
 
 
 
-// document.getElementById("quiz-form").addEventListener("submit", function (event) {
-//     event.preventDefault();
+document.getElementById("quiz-form").addEventListener("submit", function (event) {
+    event.preventDefault();
 
     const responses = [];
     const formElements = document.querySelectorAll(".question input[type=radio]:checked");
@@ -48,7 +48,7 @@ function GEN_Date2() {
     });
 
 
-// });
+});
 
 function analyzePersonality() {
     // Where values are retrieved
@@ -150,7 +150,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     generateButton1.addEventListener("click", async () => {
         try {
-            const response = await fetch(`https://api.spoonacular.com/food/wine/recommendation?apiKey=19167b5ae4f3486fa25186b366e91b55&wine=merlot`, {
+            const response = await fetch(`https://api.spoonacular.com/food/wine/recommendation?apiKey=19167b5ae4f3486fa25186b366e91b55&wine=`, {
                 method: "GET",
                 headers: {
                     "Accept": "application/json"
