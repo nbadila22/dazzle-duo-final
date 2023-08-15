@@ -1,7 +1,7 @@
 body {
     background-color:#e4dfdd;
     margin:0px;
-    
+    font-family: Georgia, serif;
 }
 
 
@@ -16,7 +16,7 @@ body {
   color: #111;
   cursor: pointer;
   display: flex;
-  font-family: Inter,sans-serif;
+  font-family: Georgia, serif;
   font-size: 16px;
   height: 48px;
   justify-content: center;
@@ -66,6 +66,21 @@ body {
 }
 
 /* END OF BUTTON STYLING */ 
+
+#headDD{
+color:#fee6e3;
+display:flex; 
+align-items:center;
+}
+#headDDaID{
+    display:flex; 
+    align-items:center;
+}
+#leftSideNav{
+    display:flex; 
+align-items:center;
+
+}
 
 #nav{
     background-color: #d384a6 !important; 
@@ -147,8 +162,8 @@ align-items:center;
 text-align:center;
 font-size: 24px;
 color:#201812;
-background-color:#e4dfdd; 
-border-bottom: solid #111412 5px;
+background-image: linear-gradient(180deg, #e3afbc, #db98aa); 
+border-bottom: solid #e4dfdd 5px;
 
 transition: 0.5s;
 -moz-transition: 0.5s;
@@ -157,7 +172,7 @@ transition: 0.5s;
 }
 #quickScrollButtons:hover {
 
-    background-image: linear-gradient(180deg, #e3afbc, #db98aa);
+    background-image: linear-gradient(180deg, #689775, #8fbf9d);
     color:#ebeced;
     
     transition: 0.5s;
@@ -180,14 +195,15 @@ transition: 0.5s;
     color:#201812;
     /*height:200px;*/
     width:auto;
-    background-color:#e4dfdd; 
+    background-image: linear-gradient(180deg, #e3afbc, #db98aa); 
     /* Line 38-40 this is to seperate the two child divs within the parent container div into two rows */
     display:flex;
     flex-direction:row; 
     flex-wrap:wrap;
     text-align:center;
     align-items:center;
-    border-bottom: solid #111412 5px;
+    border-bottom: solid #e4dfdd 5px;
+
     /* Lines 74-77 transition the bg and font colors */
     transition: 0.5s;
     -moz-transition: 0.5s;
@@ -198,7 +214,7 @@ transition: 0.5s;
 }
 
 #intro-extro-cont:hover {
-    background-image: linear-gradient(180deg, #e3afbc, #db98aa);
+    background-image: linear-gradient(180deg, #689775, #8fbf9d);
     color:#ebeced;
     /* Lines 86-89 transition the bg and font colors */
     transition: 0.5s;
@@ -234,23 +250,15 @@ transition: 0.5s;
 #drinks-cont{
     display: flex;
     justify-content: center;
-    font-size: 24px;
-    width:auto;
-    background-color:rgb(142, 136, 54); 
-}
-
-/* WTM SECTION CSS STARTS HERE */
-.wtm-cont{
-    display: flex;
-    justify-content: center;
     flex-direction:column;
     text-align:center;
     align-items:center;
     font-size: 24px;
-    width:auto;
-    background-color:#e4dfdd;
+    width:100%;
+    height:auto; 
+    background-image: linear-gradient(180deg, #e3afbc, #db98aa); 
     color:#7c5884;
-    border-bottom: solid #111412 5px;   
+    border-bottom: solid #e4dfdd 5px;   
     transition: background-color 3s 2s;
      /* Lines 138-141 transition the bg and font colors */
      transition: 0.5s;
@@ -258,7 +266,71 @@ transition: 0.5s;
      -webkit-transition: 0.5s;
      -o-transition: 0.5s;
 }
-.wtm-cont:hover {
+#drinks-cont:hover{
+    background-image: linear-gradient(180deg, #689775, #8fbf9d);
+    /*background-image: linear-gradient(180deg, #e3afbc, #db98aa);*/ 
+    color:#ebeced;
+    background-color: #e8f5fa;
+    transition: background-color 0s;
+     /* Lines 86-89 transition the bg and font colors */
+     transition: 0.5s;
+     -moz-transition: 0.5s;
+     -webkit-transition: 0.5s;
+     -o-transition: 0.5s;
+}
+#twobuttons{
+display: flex;
+justify-content: center;
+flex-direction:column;
+text-align:center;
+align-items:center;
+font-size: 24px;
+width:100%;
+height:auto; 
+background-image: linear-gradient(180deg, #e3afbc, #db98aa); 
+color:#7c5884;
+border-bottom: solid #e4dfdd 5px;   
+transition: background-color 3s 2s;
+ /* Lines 138-141 transition the bg and font colors */
+ transition: 0.5s;
+ -moz-transition: 0.5s;
+ -webkit-transition: 0.5s;
+ -o-transition: 0.5s;
+}
+
+#twobuttons:hover{
+    background-image: linear-gradient(180deg, #689775, #8fbf9d);
+    /*background-image: linear-gradient(180deg, #e3afbc, #db98aa);*/ 
+    color:#ebeced;
+    background-color: #e8f5fa;
+    transition: background-color 0s;
+     /* Lines 86-89 transition the bg and font colors */
+     transition: 0.5s;
+     -moz-transition: 0.5s;
+     -webkit-transition: 0.5s;
+     -o-transition: 0.5s;
+}
+/* WTM SECTION CSS STARTS HERE */
+#wtm-cont{
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    text-align:center;
+    align-items:center;
+    font-size: 24px;
+    width:100%;
+    height:auto; 
+    background-image: linear-gradient(180deg, #e3afbc, #db98aa); 
+    color:#7c5884;
+    border-bottom: solid #e4dfdd 5px;   
+    transition: background-color 3s 2s;
+     /* Lines 138-141 transition the bg and font colors */
+     transition: 0.5s;
+     -moz-transition: 0.5s;
+     -webkit-transition: 0.5s;
+     -o-transition: 0.5s;
+}
+#wtm-cont:hover {
     background-image: linear-gradient(180deg, #689775, #8fbf9d);
     /*background-image: linear-gradient(180deg, #e3afbc, #db98aa);*/ 
     color:#ebeced;
@@ -303,20 +375,27 @@ transition: 0.5s;
     width:100%;
      /* Line 74-76 this is to seperate the two child divs within the parent container div into two rows */
      display:flex;
-     flex-direction:row; 
+     flex-direction:center; 
      flex-wrap:wrap;
-     align-items:flex-end;
+     align-items:center;
      text-align:center;
    
 }
 
 .introGEN {
     width: 50%;
+    display:flex; 
+    text-align:center;
+    justify-content:center;
+    flex-wrap:wrap;
 }
 
 .extroGEN {
-    width:50%;
-    
+    width: 50%;
+    display:flex; 
+    text-align:center;
+    justify-content:center;
+    flex-wrap:wrap;
 }
 /* WTM SECTION CSS ENDS HERE */
 
@@ -328,7 +407,7 @@ transition: 0.5s;
     font-size: 24px;
     width:auto;
     font-size: 24px;
-    background-color:#e4dfdd;
+    background-image: linear-gradient(180deg, #e3afbc, #db98aa); 
     color:#7c5884;
     border-bottom: solid #111412 5px;   
     transition: background-color 3s 2s;
@@ -341,7 +420,7 @@ transition: 0.5s;
 }
 
 #vibe-check-cont:hover{
-background-image: linear-gradient(180deg, #e3afbc, #db98aa);
+background-image: linear-gradient(180deg, #689775, #8fbf9d);
 color:#ebeced;
 background-color: #e8f5fa;
 transition: background-color 0s;
@@ -376,7 +455,7 @@ width: 100%;
 
 
 .recipe-box {
-    border: 1px solid #ccc;
+    
     padding: 10px;
     width: 100vw; /* Adjust the width as needed */
     margin: 20px auto;
@@ -404,3 +483,24 @@ width: 100%;
     margin: 20px;
 }
 
+#buttonwrapper{
+    display: flex;
+ }  
+
+ #twobuttons {
+    display: flex; /* Use flexbox to align items horizontally
+}
+
+.buttonStyle {
+    /* Add any styling you want for the buttons */
+    margin-right: 15px; /* Add spacing between buttons */
+}
+
+.recipe-box {
+    /* Add any styling you want for the recipe boxes */
+}
+
+#homeVideo{
+    padding:0;
+    border-bottom: solid #111412 5px;
+}

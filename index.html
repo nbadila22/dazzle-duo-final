@@ -24,7 +24,7 @@
 
             <!-- *** IMPORTANT TO KNOW *** head-float is split into 3 div sections: left side (25% screen), center (50% screen), and the right side (25% screen) -->
             <div class="leftSideNav">
-
+                <a id="headDDaID" href="index.html"><h3 id="headDD">DAZZLE DUO</h3></a>
             </div>
 
             <div class="home-icon-holder">
@@ -37,36 +37,28 @@
 
         
         </div>
-<!-- Clock -->
-        <div class="input-group clockpicker" data-placement="left" data-align="top" data-autoclose="true">
-            <input type="text" class="form-control" value="13:14">
-            <span class="input-group-addon">
-                <span class="glyphicon glyphicon-time"></span>
-            </span>
-        </div>
-        <script src="project.js"></script>
         
         <nav id="nav" class="navbar navbar-expand-lg bg-body-tertiary navbarcolor">
             <div class="container-fluid">
-            <a class="navbar-brand" href="index.html" id="dazzlelogo">Dazzle Duo</a>
+            <a class="navbar-brand" href="index.html" id="dazzlelogo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="hi">LOGIN</a>
+                    
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="feedback.html">Feedback</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    ABOUT US
+                    About Us
                     </a>
                     <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="meet.html">MEET THE TEAM</a></li>
-                    <li><a class="dropdown-item" href="meet.html">MISSION</a></li>   
+                        <li><a class="dropdown-item" href="meet.html">Meet The Team</a></li>
+                        <li><a class="dropdown-item" href="meet.html">Mission</a></li>   
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -76,6 +68,16 @@
                 
             </div>
             </div>
+
+            <!-- Clock -->
+        <div class="clockpicker" data-placement="right" data-align="top" data-autoclose="true">
+            <input type="text" class="form-control" value="11:12">
+            <!-- <span class="input-group-addon">
+                <span class="glyphicon glyphicon-time"></span>
+            </span> -->
+        </div>
+        <script src="project.js"></script>
+        
         </nav>
     </div>
 
@@ -84,9 +86,9 @@
 
         <div id="quickScrollButtons">
 
-            <button class="buttonStyle" role="button" onclick="dinnerScroll()">Drink Box</button>
+            <button class="buttonStyle" role="button" onclick="dinnerScroll()">Sip 'n' Dine</button>
             <button class="buttonStyle" role="button" onclick="vibeScroll()">Vibe Check</button>
-            <button class="buttonStyle" role="button" onclick="wtmScroll()">Whats The Move</button>
+            <button class="buttonStyle" role="button" onclick="wtmScroll()">What's The Move?</button>
             
 
         </div>
@@ -103,11 +105,11 @@
                 <div class="extro-desc"> <!--Left side row - information on extroverts-->
 
                     <h2>EXTROVERTS</h2> 
-                    <h5>An extrovert is someone who thrives on social interactions and gains energy from being around others.</h3> 
+                    <h5>An extrovert is someone who thrives on social interactions and gains energy from being around others.</h5> 
 
                     <ul> 
-                        <li>Loves attending parties and meeting new people.</li>
                         <li>Outgoing and sociable.</li>
+                        <li>Loves attending parties and meeting new people.</li>
                         <li>Enjoys being around people and making new connections.</li>
                         
                     </ul>
@@ -117,8 +119,7 @@
                 <div class="intro-desc"> <!-- Right side row - information on introverts-->
 
                     <h2>INTROVERTS</h2> 
-                    <h5>
-                        <h3>An introvert, on the other hand, is someone who prefers solitary activities and tends to feel more comfortable and energized in their own company.</h3> <!-- CHANGE CONTENT -->
+                    <h5>An introvert, on the other hand, is someone who prefers solitary activities and tends to feel more comfortable and energized in their own company.</h5> <!-- CHANGE CONTENT -->
 
                     <ul> 
                         
@@ -131,19 +132,16 @@
 
         </div>
 
-        <div id="drinks-cont"> <!--ADD:-->
-            <div id="buttonWrapper1">
-                <button class="buttonStyle" role="button" id="generateButton1">Drink recipes</button>
-                <div id="wineInfo" class="recipe-box1"></div>
-            </div>
-        </div>
+       
 
-        <div class="wtm-cont"> 
+        <div id ="wtm-cont"> 
         <!-- This Div contains the 2 buttons with the click triggers for the GEN_Date & GEN_Date2 functions to generate random date ideas for the user -->
                 
                 <div id="wtmHeader">
-                    <h3>WTM?</h3>
+                    <h3>What's The Move?</h3>
                 </div>
+                <p>Choose a side</p>
+                <!-- change text -->
 
                 <div class = "genHolder">
 
@@ -151,7 +149,7 @@
                     <div class="extroGEN">
 
                         <!-- This button starts the function "GEN_Date" to generate random date ideas -->
-                        <button class="buttonStyle" role="button" onclick="GEN_Date()">EXTRO</button>
+                        <button class="buttonStyle" role="button" onclick="GEN_Date()">EXTRO</button><br><br>
                 
                         <div id="Date_Print_Div"> <!-- This is the div of the date generator output -->
 
@@ -164,21 +162,32 @@
                     <div class="introGEN">
 
                         <!-- This button starts the function "GEN_Date" to generate random date ideas -->
-                        <button class="buttonStyle" role="button" onclick="GEN_Date2()">INTRO</button>
+                        <button class="buttonStyle" role="button" onclick="GEN_Date2()">INTRO</button><br><br>
                 
                         <div id="Date_Print_Div2"> <!-- This is the div of the date generator output -->
-
+                        
                             <p id="dateP2"></p> <!-- This is the paragraph that prints the date idea out -->
-                        </div>
+                    </div>
 
                     </div>
                 </div>
         </div>
-<!-- THIS IS THE BUTTON AND DIV FOR THE RECIPE GENERATOR - HIEN -->
-<div id="buttonWrapper">
-            <button class="buttonStyle" role="button" onclick="clickRecipe()" id="generateButton">Dinner recipe ideas</button>
-            <div id="recipeContainer" class="recipe-box"></div>
+
+        <div id="drinks-cont">
+            <!-- <div id="buttonWrapper1"> -->
+            <button class="buttonStyle" role="button" id="generateButton1">Drink Recipes</button>
+            <div id="wineInfo" class="recipe-box"></div>
+            <!-- </div> REMOVE THIS LINE -->
         </div>
+<!-- THIS IS THE BUTTON AND DIV FOR THE RECIPE GENERATOR - HIEN -->
+<div id="twobuttons">
+    <!-- <div id="buttonWrapper"> -->
+    <button class="buttonStyle" role="button" onclick="clickRecipe()" id="generateButton">Dinner Recipes</button>
+    <div id="recipeContainer" class="recipe-box"></div>
+    
+    
+    <!-- </div> REMOVE THIS LINE -->
+</div>
 
         
 
@@ -189,7 +198,8 @@
 
         <div id="vibe-check-cont">
             <div id="quiz">
-                <h1>Personality Test</h1> 
+                <h1>Vibe Check</h1> 
+                <h2>Not sure where you fit in? Take this quick personality test to learn how you can connect with someone new.</h2>
             <!-- This is where the questions will be formatted -->
                 <form id="quiz-form">
                     <fieldset class="question1">
@@ -234,15 +244,13 @@
         
             <div class="footer"> <!--ADD: nav bar, copyright, social media links, etc.-->
                 <div> <img id="footerimg"  src="logo.png" alt="winecling">&nbsp&nbsp&nbsp</div>
-                <div class="footertext">Copyright © 2023 Apple Inc &nbsp&nbsp&nbsp</div>
+                <div class="footertext">Copyright © 2023 Dazzle Duo Inc &nbsp&nbsp&nbsp</div>
                 <div class="footertext">All rights reserved. &nbsp&nbsp&nbsp</div>
                 <div class="footertext">Privacy Policy.&nbsp&nbsp&nbsp</div>
                 <div class="footertext">Terms of Use.&nbsp&nbsp&nbsp</div>
                 <div class="footertext">Sales and Refunds.&nbsp&nbsp&nbsp</div>
                 <div class="footertext">Legal &nbsp&nbsp&nbsp</div>
                 <div class="footertext">Site Map&nbsp&nbsp&nbsp</div>
-                <!-- <div class="footertext" id="fblogo"><img src="facebook.png" alt="facebook logo"> </div> -->
-                <div class="footertext">Twitter logo &nbsp&nbsp&nbsp</div>
                 <div class="footertext">etc</div>
             </div>
     
