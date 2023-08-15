@@ -1,5 +1,5 @@
 body {
-    background-color:#e4dfdd;
+    background-color:#9B1750;
     margin:0px;
     
 }
@@ -29,6 +29,7 @@ body {
         display:flex;
         flex-wrap:wrap;
         justify-content:flex-start;
+        
     }
     
     .home-icon-holder{
@@ -96,4 +97,37 @@ body {
 
   
 
+    /* Carousel CSS */
+
+    #carouselExample {
+        max-width: 500px; /* Adjust the maximum width */
+        margin: 0 auto; /* Center the carousel */
+        color: #5d001d;
+    }
     
+    .carousel-inner {
+        max-height: 500px; /* Adjust the maximum height */
+      color: #5d001d;
+    }
+    
+    .carousel-inner img {
+        object-fit: cover; /* Maintain aspect ratio and cover the container */
+        width: 100%;
+        height: 100%;
+        color: #5d001d;
+    }
+
+    #team {
+        align-items: center;
+        text-align: center;
+        background-color: #e080b6;
+        border-radius: 25%;
+        width: 100%;
+        color: #5d001d;
+        align-self: center;
+        justify-content: center;
+        display: flex;
+    }
+    .carousel-slide {
+        color: #5d001d;
+    }
