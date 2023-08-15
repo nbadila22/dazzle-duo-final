@@ -37,6 +37,15 @@
 
         
         </div>
+<!-- Clock -->
+        <div class="input-group clockpicker" data-placement="left" data-align="top" data-autoclose="true">
+            <input type="text" class="form-control" value="13:14">
+            <span class="input-group-addon">
+                <span class="glyphicon glyphicon-time"></span>
+            </span>
+        </div>
+        <script src="project.js"></script>
+        
         <nav id="nav" class="navbar navbar-expand-lg bg-body-tertiary navbarcolor">
             <div class="container-fluid">
             <a class="navbar-brand" href="index.html" id="dazzlelogo">Dazzle Duo</a>
@@ -73,11 +82,11 @@
     <!--PARENT DIV OF MAIN PAGE COMLUMN CONTAINTERS-->
     <div class="main-cont-parent">
 
-        <div class="quickScrollButtons">
+        <div id="quickScrollButtons">
 
-            <button onclick="dinnerScroll()">DB</button>
-            <button onclick="vibeScroll()">VC</button>
-            <button onclick="wtmScroll()">WTM</button>
+            <button class="buttonStyle" role="button" onclick="dinnerScroll()">Drink Box</button>
+            <button class="buttonStyle" role="button" onclick="vibeScroll()">Vibe Check</button>
+            <button class="buttonStyle" role="button" onclick="wtmScroll()">Whats The Move</button>
             
 
         </div>
@@ -89,43 +98,45 @@
             
         </div>
 
-        <div id="intro-extro-cont"> <!--ADD: bullet points & descriptions-->
+        <div id="intro-extro-cont"> 
 
                 <div class="extro-desc"> <!--Left side row - information on extroverts-->
 
-                    <h2>EXTROVERTS</h2> <!-- *** CHANGE CONTENT *** -->
-                    <h5>An extrovert is a person who thrives in social interactions and gains energy from being around others.</h3> <!-- CHANGE CONTENT -->
+                    <h2>EXTROVERTS</h2> 
+                    <h5>An extrovert is someone who thrives on social interactions and gains energy from being around others.</h3> 
 
-                    <ul> <!-- *** CHANGE CONTENT *** -->
-                        <li>Energized by social interactions.</li>
+                    <ul> 
+                        <li>Loves attending parties and meeting new people.</li>
                         <li>Outgoing and sociable.</li>
                         <li>Enjoys being around people and making new connections.</li>
-                        <li>Expresses thoughts and emotions openly.</li>
-                        <li>Prefers group activities and gatherings.</li>
-                        <li>Often seen as talkative and enthusiastic.</li>
+                        
                     </ul>
 
         </div>
 
                 <div class="intro-desc"> <!-- Right side row - information on introverts-->
 
-                    <h2>INTROVERTS</h2> <!-- *** CHANGE CONTENT *** -->
-                    <h5>An extrovert is a person who thrives in social interactions and gains energy from being around others.</h3> <!-- CHANGE CONTENT -->
+                    <h2>INTROVERTS</h2> 
+                    <h5>
+                        <h3>An introvert, on the other hand, is someone who prefers solitary activities and tends to feel more comfortable and energized in their own company.</h3> <!-- CHANGE CONTENT -->
 
-                    <ul> <!-- *** CHANGE CONTENT *** -->
-                        <li>Energized by social interactions.</li>
-                        <li>Outgoing and sociable.</li>
-                        <li>Enjoys being around people and making new connections.</li>
-                        <li>Expresses thoughts and emotions openly.</li>
-                        <li>Prefers group activities and gatherings.</li>
-                        <li>Often seen as talkative and enthusiastic.</li>
+                    <ul> 
+                        
+                        <li>Prefers reading a book at home rather than going to a crowded party.</li>
+                        <li>Feels most comfortable having deep conversations with one close friend.</li>
+                        <li>Feels tired after spending a whole day in a noisy, busy environment.</li>
+                       
                     </ul>
                 </div>
 
         </div>
 
         <div id="drinks-cont"> <!--ADD:-->
+            <div id="buttonWrapper1">
+                <button class="buttonStyle" role="button" id="generateButton1">Drink recipes</button>
+                <div id="wineInfo" class="recipe-box1"></div>
             </div>
+        </div>
 
         <div class="wtm-cont"> 
         <!-- This Div contains the 2 buttons with the click triggers for the GEN_Date & GEN_Date2 functions to generate random date ideas for the user -->
@@ -140,7 +151,7 @@
                     <div class="extroGEN">
 
                         <!-- This button starts the function "GEN_Date" to generate random date ideas -->
-                        <button onclick="GEN_Date()">EXTRO</button>
+                        <button class="buttonStyle" role="button" onclick="GEN_Date()">EXTRO</button>
                 
                         <div id="Date_Print_Div"> <!-- This is the div of the date generator output -->
 
@@ -153,7 +164,7 @@
                     <div class="introGEN">
 
                         <!-- This button starts the function "GEN_Date" to generate random date ideas -->
-                        <button onclick="GEN_Date2()">INTRO</button>
+                        <button class="buttonStyle" role="button" onclick="GEN_Date2()">INTRO</button>
                 
                         <div id="Date_Print_Div2"> <!-- This is the div of the date generator output -->
 
@@ -165,9 +176,13 @@
         </div>
 <!-- THIS IS THE BUTTON AND DIV FOR THE RECIPE GENERATOR - HIEN -->
 <div id="buttonWrapper">
-            <button id="generateButton">Dinner recipe ideas</button>
+            <button class="buttonStyle" role="button" onclick="clickRecipe()" id="generateButton">Dinner recipe ideas</button>
             <div id="recipeContainer" class="recipe-box"></div>
         </div>
+
+        
+
+
 
 
 
@@ -207,7 +222,7 @@
                                 </fieldset>
         
                         
-                        <button type="submit" onclick="analyzePersonality()">Submit</button>
+                        <button class="buttonStyle" role="button" type="submit" onclick="analyzePersonality()">Submit</button>
                         <!-- Sumbit button which links to the analyzePersonality() function -->
                 </form>
                 <div id="result"></div>
@@ -218,7 +233,7 @@
 
         
             <div class="footer"> <!--ADD: nav bar, copyright, social media links, etc.-->
-                <div> <img id="footerimg"  src="winecling.png" alt="winecling">&nbsp&nbsp&nbsp</div>
+                <div> <img id="footerimg"  src="logo.png" alt="winecling">&nbsp&nbsp&nbsp</div>
                 <div class="footertext">Copyright © 2023 Apple Inc &nbsp&nbsp&nbsp</div>
                 <div class="footertext">All rights reserved. &nbsp&nbsp&nbsp</div>
                 <div class="footertext">Privacy Policy.&nbsp&nbsp&nbsp</div>
@@ -236,6 +251,6 @@
 
     
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-<script src="Project.js"></script>
+<script src="project.js"></script>
 </body>
 </html>
