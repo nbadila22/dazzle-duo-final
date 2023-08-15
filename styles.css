@@ -67,7 +67,7 @@ z-index: 1030;
 
 }
 .quickScrollButtons{
-height:auto;
+height: 75px;
 width: 100%;
 display:flex;
 flex-wrap:wrap;
@@ -280,4 +280,28 @@ transition: background-color 0s;
 #video{
 height: auto;
 width: 100%;
+}
+
+
+.recipe-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100vw; /* Adjust the width as needed */
+    margin: 20px auto;
+    text-align: center;
+}
+
+.recipe-box img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+.recipe-box h2 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.recipe-box p {
+    text-align: left;
 }
