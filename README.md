@@ -9,5 +9,8 @@ Netlify: used to make the site publicly avaliable on a web domain.
 
 
 <img width="1440" alt="Screenshot 2023-08-15 at 9 40 26 AM" src="https://github.com/nbadila22/dazzle-duo-final/assets/38538883/86854cd8-1a88-4ea6-8f0c-cbc6a500741a">
-
+Video primer for the site
 <img width="1435" alt="Screenshot 2023-08-15 at 9 45 32 AM" src="https://github.com/nbadila22/dazzle-duo-final/assets/38538883/4b369b02-9df2-48ce-9312-fcf03619d818">
+Example of site layout
+<img width="1439" alt="Screenshot 2023-08-15 at 9 47 21 AM" src="https://github.com/nbadila22/dazzle-duo-final/assets/38538883/93689b6b-a633-4333-a64b-6145c9fb2431">
+Linked Page titled "Meet the Team"
