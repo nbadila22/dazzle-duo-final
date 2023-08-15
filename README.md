@@ -8,3 +8,4 @@ Bootstrap: for css styling with the nav bar and
 Netlify: used to make the site publicly avaliable on a web domain.
 
 
+<img width="1440" alt="Screenshot 2023-08-15 at 9 40 26 AM" src="https://github.com/nbadila22/dazzle-duo-final/assets/38538883/86854cd8-1a88-4ea6-8f0c-cbc6a500741a">
