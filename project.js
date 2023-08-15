@@ -1,3 +1,5 @@
+// const formSubmit = document.getElementById("quiz-form")
+const formSubmit = document.querySelector('#quiz-form')
 
 //EXTROVERT DATE GENERATOR 
 const datePDiv = document.getElementById('Date_Print_Div')
@@ -37,18 +39,6 @@ function GEN_Date2() {
 
 
 
-document.getElementById("quiz-form").addEventListener("submit", function (event) {
-    event.preventDefault();
-
-    const responses = [];
-    const formElements = document.querySelectorAll(".question input[type=radio]:checked");
-
-    formElements.forEach(element => {
-        responses.push(element.value);
-    });
-
-
-});
 
 function analyzePersonality() {
     // Where values are retrieved
@@ -59,11 +49,11 @@ function analyzePersonality() {
         q4: document.querySelector('input[name="q4"]:checked').value,
         q5: document.querySelector('input[name="q5"]:checked').value
     };
-
+    
     // Where we calculated the yes and no count
     const yesCount = Object.values(responses).filter(response => response === "Yes").length;
     const noCount = Object.values(responses).filter(response => response === "No").length;
-
+    
     // function to determine personality type by tallying up values of yes and no
     let personality = "";
     if (yesCount > noCount) {
@@ -73,11 +63,24 @@ function analyzePersonality() {
     } else {
         personality = "Mix of Both";
     }
-
+    
     // Where we display the personality result
     const resultElement = document.getElementById("result");
     resultElement.innerHTML = `<p>Your personality type: ${personality}</p>`;
 }
+
+console.log(formSubmit)
+formSubmit.addEventListener("submit", function (event) {
+    event.preventDefault();
+    console.log('hi')
+
+    const responses = [];
+    const formElements = document.querySelectorAll(".question input[type=radio]:checked");
+
+    formElements.forEach(element => {
+        responses.push(element.value);
+    });
+});
 
 // SCROLL TO DINNER GENERATOR SECTION // 
 function scrollUpTop() {
@@ -112,9 +115,7 @@ function scrollUpTop() {
 
 // hien api test
 
-// script.js
 
-// script.js
 
 const apiKey = '1'; 
 const apiUrl = 'https://www.themealdb.com/api/json/v1/1/random.php';
@@ -122,7 +123,7 @@ const apiUrl = 'https://www.themealdb.com/api/json/v1/1/random.php';
 function clickRecipe(){
 const generateButton = document.getElementById('generateButton');
 const recipeContainer = document.getElementById('recipeContainer');
-console.log("generateButton; ", generateButton)
+// console.log("generateButton; ", generateButton) <--- to test api
 // generateButton.addEventListener('click', () => {
     fetch(apiUrl)
         .then(response => response.json())
@@ -150,7 +151,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     generateButton1.addEventListener("click", async () => {
         try {
-            const response = await fetch(`https://api.spoonacular.com/food/wine/recommendation?apiKey=19167b5ae4f3486fa25186b366e91b55&wine=`, {
+            const response = await fetch(`https://api.spoonacular.com/food/wine/recommendation?apiKey=19167b5ae4f3486fa25186b366e91b55&wine=merlot`, {
                 method: "GET",
                 headers: {
                     "Accept": "application/json"
