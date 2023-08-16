@@ -1,14 +1,10 @@
 #nav{
     background-color: #d384a6 !important; 
-    
+    z-index: 100000;
 }
 body {
     background-color:#e4dfdd;
     margin:0px;
-    
-}
-#nav{
-    background-color: #d384a6 !important; 
     
 }
 #home-click-logo{
