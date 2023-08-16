@@ -151,7 +151,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     generateButton1.addEventListener("click", async () => {
         try {
-            const response = await fetch(`https://api.spoonacular.com/food/wine/recommendation?apiKey=19167b5ae4f3486fa25186b366e91b55&wine=merlot`, {
+            const response = await fetch(`https://api.spoonacular.com/food/wine/recommendation?apiKey=3126204e9cf44684b89f623e1476d79d&wine=greco`, {
                 method: "GET",
                 headers: {
                     "Accept": "application/json"
@@ -184,7 +184,8 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
-$('.clockpicker').clockpicker();
+
+
 
 
 
