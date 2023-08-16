@@ -6,7 +6,7 @@ The features of our site includes: appealing graphic design, a fully functioning
 Some technologies that were used include: 
 Bootstrap: for css styling with the nav bar and 
 Netlify: used to make the site publicly avaliable on a web domain.
-
+Moment.js: used to add a real time clock element to the main site
 
 <img width="1440" alt="Screenshot 2023-08-15 at 9 40 26 AM" src="https://github.com/nbadila22/dazzle-duo-final/assets/38538883/86854cd8-1a88-4ea6-8f0c-cbc6a500741a">
 Video primer for the site
